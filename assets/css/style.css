@@ -165,6 +165,40 @@ body { background: var(--smoky-black); }
   #REUSED STYLE
 \*-----------------------------------*/
 
+[data-sidebar] {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  transition: transform 0.3s ease-out;
+}
+
+[data-sidebar].active {
+  transform: translateX(300px);
+}
+[data-modal-container] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out;
+}
+
+[data-modal-container].active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 .sidebar,
 article {
   background: var(--eerie-black-2);
