@@ -417,9 +417,10 @@ main {
 
 .contact-title {
   color: var(--light-gray-70);
-  font-size: var(--fs-8);
+  font-size: var(--fs-7);
   text-transform: uppercase;
   margin-bottom: 2px;
+  font-size: 0.8rem;
 }
 
 .contact-info :is(.contact-link, time, address) {
@@ -427,7 +428,9 @@ main {
   font-size: var(--fs-7);
 }
 
-.contact-info address { font-style: normal; }
+.contact-info address { font-style: normal;
+  font-size: 0.8rem;
+}
 
 .social-list {
   display: flex;
@@ -1866,7 +1869,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 0.8rem; /* or any desired size */
   }
+  
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
