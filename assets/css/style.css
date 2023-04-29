@@ -35,7 +35,7 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(205, 100%, 71%) 0%, 
+    hsl(200, 100%, 71%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
@@ -51,7 +51,7 @@
   --text-gradient-yellow: linear-gradient(
     to right, 
     hsl(205, 100%, 72%), 
-    hsl(216, 66%, 43%)
+    hsl(216, 81%, 58%)
   );
 
   /* solid */
@@ -780,6 +780,12 @@ main {
   margin-bottom: 25px;
 }
 
+.logo-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* adjust the margin as needed */
+}
+
 .timeline-list {
   font-size: var(--fs-6);
   margin-left: 45px;
@@ -793,6 +799,9 @@ main {
   font-size: var(--fs-6);
   line-height: 1.3;
   margin-bottom: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
 }
 
 .timeline-list span {
