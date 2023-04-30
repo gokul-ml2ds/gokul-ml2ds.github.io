@@ -260,8 +260,8 @@ article.active {
 
 }
 
-.keyword-purple {
-  color: #9b59b6;
+.keyword-grey {
+  color: #f8f6f6d2;
 }
 
 .keyword-blue {
@@ -877,6 +877,14 @@ main {
   margin-left: 45px;
 }
 
+.timeline-item-title:hover {
+  cursor: pointer;
+  color: hsl(205, 91%, 69%);
+}
+.timeline-item-title span {
+  font-size: 0.6em;
+}
+
 .timeline-item { position: relative; }
 
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
@@ -891,8 +899,8 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
-  font-weight: var(--fw-400);
+  color: hsl(205, 82%, 68%);
+  font-weight: var(--fw-500);
   line-height: 1.6;
 }
 

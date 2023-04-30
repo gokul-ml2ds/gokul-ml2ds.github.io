@@ -280,6 +280,11 @@
                       <span class="icon-text">AWS Sagemaker</span>
                     </div>
 
+                    <div class="service-icon-box">
+                      <img src="./assets/images/selenium.png" alt="Tableau logo" width="35">
+                      <span class="icon-text">Selenium</span>
+                    </div>
+
             </li>
 
 
@@ -303,7 +308,7 @@
                   <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Meet Gandhi</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title> Rahul Srivastav</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
@@ -472,11 +477,45 @@
               <div class="logo-box">
                 <img src="assets/images/UniversityofPennsylvania_Shield_RGB.png" alt="University School of the Arts logo" width="22.5" height="25">
               </div>
-              <h3 class="h4 timeline-item-title">University of Pennsylvania</h3>
-              <span>2007 — 2008</span>
-              <p class="timeline-text">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias exceptur.</p>
+              <h4 class="h3 timeline-item-title" style="display: inline-block; position: relative;">
+                University of Pennsylvania
+                <span style="position: absolute; top: 50%; right: -15px; transform: translateY(-50%); cursor: pointer; transition: transform 0.2s;">
+                  &#x25B6;
+                </span>
+              </h4>
+              <span>Aug. 2022 – May. 2024</span>
+              <p class="timeline-text" ><strong>Master of Science in Engineering (MSE) in Data Science; GPA: 4.0</strong></p>
+            
+              <ul class="keyword-grey" style="font-size: 0.8em; font-style: italic; display: none;">
+                <li>CIS545: Big Data Analytics</li>
+                <li>ESE542: Stats for Data Science</li>
+                <li>STAT530: Forecasting Methods for Management</li>
+                <li>CIS520: Machine Learning</li>
+                <li>CIS550: Databases & Information Systems</li>
+                <li>BMIN521: Health Language Processing</li>
+              </ul>
             </li>
+            
+            <script>
+              // Show/hide dropdown when the arrow or title is clicked
+              const arrow = document.querySelector('.timeline-item-title span');
+              const title = document.querySelector('.timeline-item-title');
+              const dropdown = document.querySelector('.keyword-grey');
+              
+              // Function to toggle arrow and dropdown
+              const toggleArrow = () => {
+                dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+                arrow.textContent = arrow.textContent === '▶' ? '▼' : '▶';
+                arrow.style.transform = arrow.style.transform === 'translateY(-50%) rotate(90deg)' ? 'translateY(-50%) rotate(0deg)' : 'translateY(-50%) rotate(90deg)';
+              };
+              
+              // Add event listeners to arrow and title
+              arrow.addEventListener('click', toggleArrow);
+              title.addEventListener('click', toggleArrow);
+            </script>
+            
+            
+
             
 
             
@@ -485,25 +524,13 @@
               <div class="logo-box">
                 <img src="assets/images/spit_logo.png" alt="University School of the Arts logo" width="24" height="24">
               </div>
-              <h3 class="h4 timeline-item-title">University School of the Arts</h3>
-              <span>2007 — 2008</span>
-              <p class="timeline-text">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias exceptur.</p>
+              <h4 class="h4 timeline-item-title">Sardar Patel Institute of Technology</h4>
+              <span>Aug. 2018 – June. 2022</span>
+              <p class="timeline-text" ><strong>Bachelor of Technology in Electronics and Telecommunication; GPA: 9.28</strong></p>
+              
             </li>
 
-            <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
 
           </ol>
 
@@ -513,7 +540,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="bag-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Experience</h3>
