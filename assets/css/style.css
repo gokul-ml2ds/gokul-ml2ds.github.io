@@ -73,6 +73,8 @@
    * typography
    */
 
+  
+
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
 
@@ -252,6 +254,23 @@ article.active {
 @keyframes fade {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+.keyword {
+  display: inline-block;
+
+}
+
+.keyword-purple {
+  color: #9b59b6;
+}
+
+.keyword-blue {
+  color: #3498db;
+}
+
+
+.keyword-green {
+color: #2ecc71;
 }
 
 .h2,
@@ -1413,7 +1432,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 100px; }
 
   .avatar-box img { width: 120px; }
 
@@ -1631,7 +1650,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 700px; }
+  .sidebar, article { width:700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
