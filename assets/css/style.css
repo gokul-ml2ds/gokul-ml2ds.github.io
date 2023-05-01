@@ -1201,8 +1201,9 @@ main {
 }
 
 .blog-item-title:hover {
-  transform: scale(1.02);
-  transition: transform 0.1s ease-in-out;
+  transform: scale(1.005);
+  transition: transform 0.15s ease-in-out;
+  color: #83cbfbf0;
 }
 
 
