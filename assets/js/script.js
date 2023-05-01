@@ -55,6 +55,7 @@ overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
+
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
@@ -157,3 +158,26 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Replace YOUR_GOOGLE_SCHOLAR_ID with your Google Scholar ID
+var scholarID = 'JSrAuIAAAAAJ';
+
+// Send a request to the Google Scholar API to retrieve publication data
+$.getJSON('https://api.scraperwiki.com/api/1.0/datastore/sqlite?format=json&name=google_scholar_citations&query=select%20*%20from%20%60swdata%60%20where%20scholar_id%20%3D%20%22' + scholarID + '%22%20limit%201', function(data) {
+
+  // Extract the relevant statistics from the JSON response
+  var citationCount = data[0].citation_count;
+  var hIndex = data[0].h_index;
+  var i10Index = data[0].i10_index;
+
+  // Display the statistics in the HTML document
+  $('.citation-count').text(citationCount);
+  $('.h-index').text(hIndex);
+  $('.i10-index').text(i10Index);
+
+  // Remove the "Loading..." text from the stats
+  $('.stat-value').each(function() {
+    $(this).removeClass('loading');
+  });
+
+});
